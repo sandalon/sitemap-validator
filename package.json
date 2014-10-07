@@ -1,0 +1,14 @@
+{
+  "name": "sitemap-validator",
+  "description": "Validate the URLs in a sitemap",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "async": "^0.9.0",
+    "request": "^2.44.0",
+    "string": "^2.1.0",
+    "util": "^0.10.3",
+    "xml2js": "^0.4.4",
+    "yargs": "^1.3.1"
+  }
+}
