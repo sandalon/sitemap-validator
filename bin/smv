@@ -1,4 +1,4 @@
-
+#!/usr/bin/env node
 
 var argv = require('yargs')
       .usage('Validates that the URLs in a sitemap are correct')
@@ -16,17 +16,15 @@ var argv = require('yargs')
       .describe('r', 'remap the sitemap URLs to another domain')
       .describe('s', 'source domain for remapping')
       .describe('d', 'destination for domain remapping')
-      .version('0.0.1', 'v')
+      .version('0.5.0', 'v')
       .argv
 
 var s = require('string')
-var validate = require('./validate')
+var validate = require('../lib/validate')
 
 if(s(argv.l).right(3) != 'xml') {
   console.log('The location must be an xml file');
   return;
 }
 
-validate.CheckSitemap(argv.l, argv.c, argv.s, argv.d, function(){
-
-});
+validate.CheckSitemap(argv.l, argv.c, argv.s, argv.d, function(){ });

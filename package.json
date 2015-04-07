@@ -1,7 +1,25 @@
 {
   "name": "sitemap-validator",
   "description": "Validate the URLs in a sitemap",
-  "version": "0.0.1",
+  "version": "0.5.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sandalon/sitemap-validator.git"
+  },
+  "keywords": [
+    "sitemap",
+    "validator",
+    "validation"
+  ],
+  "author": "Corey McClelland <corey@wnd.io> (http://blog.agilereaction.io/)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/sandalon/sitemap-validator/issues"
+  },
+  "main": "./lib/validate",
+  "bin": {
+    "smv": "./bin/smv"
+  },
   "private": false,
   "dependencies": {
     "async": "^0.9.0",
