@@ -14,7 +14,7 @@ var argv = require('yargs')
       .alias('c', 'code')
       .alias('s', 'source')
       .alias('d', 'destination')
-      .version('0.5.0', 'v')
+      .version('0.5.1', 'v')
       .argv
 
 var s = require('string')
