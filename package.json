@@ -1,7 +1,7 @@
 {
   "name": "sitemap-validator",
   "description": "Validate the URLs in a sitemap",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/sandalon/sitemap-validator.git"
