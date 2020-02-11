@@ -17,10 +17,9 @@ var argv = require('yargs')
       .version('0.5.1', 'v')
       .argv
 
-var s = require('string')
 var validate = require('../lib/validate')
 
-if(s(argv.l).right(3) != 'xml') {
+if(!argv.l.endsWith('.xml')) {
   console.log('The location must be an xml file');
   return;
 }
